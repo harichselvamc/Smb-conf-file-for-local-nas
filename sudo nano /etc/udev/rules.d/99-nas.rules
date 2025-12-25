@@ -1,0 +1,2 @@
+ACTION=="add", SUBSYSTEM=="block", ENV{ID_FS_UUID}=="5CA03FD1A03FAFFE", RUN+="/bin/mount /mnt/nas"
+ACTION=="remove", SUBSYSTEM=="block", ENV{ID_FS_UUID}=="5CA03FD1A03FAFFE", RUN+="/bin/umount /mnt/nas"
